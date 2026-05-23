@@ -12,4 +12,8 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 
 sudo apt-get update
 
+sudo apt-get install -y docker-ce=5:27.5.1-1~ubuntu.24.04~noble docker-ce-cli=5:27.5.1-1~ubuntu.24.04~noble containerd.io docker-compose-plugin docker-buildx-plugin
+
+sudo usermod -aG docker $USER
+
 echo "done"
