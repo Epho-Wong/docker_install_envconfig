@@ -16,6 +16,8 @@ sudo apt-get install -y docker-ce=5:27.5.1-1~ubuntu.24.04~noble docker-ce-cli=5:
 
 sudo docker info
 
+sudo apt-mark hold docker-ce docker-ce-cli containerd.io
+
 docker --version
 
 sudo usermod -aG docker $USER
