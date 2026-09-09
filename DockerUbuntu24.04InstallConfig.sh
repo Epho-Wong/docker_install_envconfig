@@ -20,6 +20,7 @@ sudo apt-mark hold docker-ce docker-ce-cli containerd.io
 
 docker --version
 
-sudo usermod -aG docker $USER
+#don't use the user that include docker groups to run docker in production mode, it's unsafe
+#sudo usermod -aG docker $USER
 
 echo "done"
